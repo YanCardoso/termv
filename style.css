@@ -27,8 +27,9 @@ body {
 }
 
 .title-container {
+    align-items: center;
     text-align: center;
-    width: 510px;
+    width: 100%;
     border-bottom: solid 1px #3a3a3c;
 }
 
@@ -40,7 +41,7 @@ body {
 .key-container {
     position: relative;
     justify-content: center;
-    max-width: 520px;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -55,7 +56,6 @@ body {
 }
 
 .key-container button:nth-child(11) {
-    margin-left: 30px;
 }
 
 .key-container button:nth-child(20),
@@ -75,7 +75,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2px;
+    margin: 4px;
 }
 
 .message-container {
