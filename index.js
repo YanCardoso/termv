@@ -2,7 +2,7 @@ const tileDisplay = document.querySelector('.tile-container')
 const keyboard = document.querySelector('.key-container')
 const messageDisplay = document.querySelector('.message-container')
 
-let wordle = 'HAVIA'
+let wordle = 'VASCO'
 
 // const getWordle = () => {
 //     fetch('http://localhost:8000/word')
