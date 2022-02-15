@@ -2,7 +2,7 @@ const tileDisplay = document.querySelector('.tile-container')
 const keyboard = document.querySelector('.key-container')
 const messageDisplay = document.querySelector('.message-container')
 const vasco = document.querySelector('.vas-container')
-
+const audiov = new Audio('assets/vsc.mp3')
 let wordle = 'VASCO'
 
 // const getWordle = () => {
@@ -14,7 +14,6 @@ let wordle = 'VASCO'
 //         .catch(err => console.log('erro'))
 // }
 // getWordle()
-
 const keys = [
     'Q',
     'W',
@@ -121,6 +120,8 @@ const checkRow = () => {
                 setTimeout(() => {
                     vasco.style.display = 'flex'
                     vasco.classList.add('on')
+                    audiov.loop =  true
+                    audiov.play()
                 }, 3000);
                 
                 return
