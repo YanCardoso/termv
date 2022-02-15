@@ -122,6 +122,17 @@ body {
   }
 }
 
+@keyframes vascobg {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
 .grey-overlay {
   background-color: #3a3a3c !important;
   border: none !important;
@@ -135,3 +146,27 @@ body {
   background-color: #538d4e !important;
   border: none !important;
 }
+
+/* img */
+
+.on {
+    animation: 5s linear vascobg;
+}
+
+.vas-container {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.vas-container img {
+  object-fit: contain;
+  min-width: 320px;
+}
+
+
+

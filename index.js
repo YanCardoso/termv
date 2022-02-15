@@ -1,6 +1,7 @@
 const tileDisplay = document.querySelector('.tile-container')
 const keyboard = document.querySelector('.key-container')
 const messageDisplay = document.querySelector('.message-container')
+const vasco = document.querySelector('.vas-container')
 
 let wordle = 'VASCO'
 
@@ -117,6 +118,11 @@ const checkRow = () => {
             if (wordle == guess) {
                 showMessage('!!!')
                 isGameOver = true
+                setTimeout(() => {
+                    vasco.style.display = 'flex'
+                    vasco.classList.add('on')
+                }, 3000);
+                
                 return
             } else {
                 if (currentRow >= 5) {
