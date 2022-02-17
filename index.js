@@ -5,6 +5,7 @@ const vasco = document.querySelector('.vas-container')
 const audiov = new Audio('assets/vsc.mp3')
 let wordle = 'VASCO'
 
+
 // const getWordle = () => {
 //     fetch('http://localhost:8000/word')
 //         .then(response => response.json())
@@ -122,6 +123,7 @@ const checkRow = () => {
                     vasco.classList.add('on')
                     audiov.loop =  true
                     audiov.play()
+                    navigator.vibrate(900)
                 }, 3000);
                 
                 return
