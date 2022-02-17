@@ -123,7 +123,7 @@ const checkRow = () => {
                     vasco.classList.add('on')
                     audiov.loop =  true
                     audiov.play()
-                    navigator.vibrate(900)
+                    navigator.vibrate([200,100,200,100,200,100,200,100])
                 }, 3000);
                 
                 return
