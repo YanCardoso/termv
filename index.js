@@ -194,7 +194,7 @@ const vsco = () => {
     vasco.style.display = "flex";
     vasco.classList.add("on");
     audiov.loop = true;
-    // audiov.play();
-    navigator.vibrate(8000);
+    audiov.play();
+    navigator.vibrate(9000);
   }, 3000);
 };

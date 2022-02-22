@@ -21,6 +21,7 @@ body {
 }
 
 .title-container {
+  position: relative;
   align-items: center;
   text-align: center;
   width: 100%;
