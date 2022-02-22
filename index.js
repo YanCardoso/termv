@@ -3,6 +3,8 @@ const keyboard = document.querySelector(".key-container");
 const messageDisplay = document.querySelector(".message-container");
 const vasco = document.querySelector(".vas-container");
 const audiov = new Audio("assets/vsc.mp3");
+const imgv = document.createElement("img");
+
 let wordle = "VASCO";
 
 // const getWordle = () => {
@@ -186,10 +188,13 @@ const flipTile = () => {
 
 const vsco = () => {
   setTimeout(() => {
+    imgv.setAttribute('src', '/assets/va.png')
+    imgv.setAttribute('alt', 'vasco')
+    vasco.insertAdjacentElement('beforeend', imgv)
     vasco.style.display = "flex";
     vasco.classList.add("on");
     audiov.loop = true;
-    audiov.play();
-    navigator.vibrate(1500);
+    // audiov.play();
+    navigator.vibrate(8000);
   }, 3000);
 };
