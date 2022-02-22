@@ -21,16 +21,65 @@ body {
 }
 
 .title-container {
+  display: flex;
   position: relative;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  height: 46px;
   width: 100%;
   border-bottom: solid 1px #3a3a3c;
 }
 
+.maxbox {
+  display: flex;
+  flex: 1;
+  position: relative;
+  justify-content: space-between;
+  height: inherit;
+  max-width: 500px;
+  padding: 0 10px;
+}
+
 .title-container h1 {
+  display: inline-block;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+}
+
+#info {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 100%;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+  background: none;
+}
+
+#info img {
+  height: 100%;
+  width: 100%;
+}
+
+#config {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 100%;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+  background: none;
+}
+
+#config img {
+  height: 100%;
+  width: 100%;
 }
 
 .tile-container {
@@ -124,14 +173,13 @@ body {
 }
 
 @keyframes vascobg {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
-
+  100% {
+    opacity: 1;
+  }
 }
 
 .grey-overlay {
@@ -151,7 +199,7 @@ body {
 /* img */
 
 .on {
-    animation: 5s linear vascobg;
+  animation: 5s linear vascobg;
 }
 
 .vas-container {
@@ -168,6 +216,3 @@ body {
   object-fit: contain;
   min-width: 320px;
 }
-
-
-
